@@ -8,4 +8,4 @@ const addTwo = (a: number, b: number) => {
   return a + b;
 };
 
-console.log(addTwo(10, 20));
+console.log(addTwo(100, 200));
