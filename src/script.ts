@@ -17,3 +17,20 @@ const arr: string[] = ["Programming", "Hero"];
 const numArr: number[] = [1, 2, 3];
 
 const dhakaLatLong: readonly [number, number] = [23.8103, 90.4125];
+
+// optional, default and rest parameters
+
+const concatName = (firstName: string, lastName?: string) => {
+  if (!lastName) {
+    return firstName;
+  }
+  return firstName + " " + lastName;
+};
+
+console.log(concatName("Jahid"));
+
+const greetings = (fullName: string, greeting = "Hello") => {
+  console.log(greeting + " " + fullName);
+};
+
+greetings("Jahid");
